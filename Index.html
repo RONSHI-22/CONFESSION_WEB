@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFESSION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CONFESS HERE</h1>
+    <h3>Don't worry, your identity is safe. No login required.</h3>
+
+    <div class="main-container">
+
+        <!-- LEFT SIDE: CONFESSIONS -->
+        <div class="confession-list" id="confessionList">
+            <h2>Recent Confessions</h2>
+            <!-- Confessions will be inserted here -->
+        </div>
+
+        <!-- RIGHT SIDE: FORM -->
+        <form action="/confess" method="POST">
+            <label>User Name</label>
+            <input type="text" name="Name" placeholder="Any name you want">
+
+            <label class="gender">Gender</label>
+            <select name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="LGBTQIA+">LGBTQIA+</option>
+                <option value="???">???</option>
+            </select>
+
+            <label>Confess here</label>
+            <textarea name="Confess" rows="10" required></textarea>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
