@@ -29,7 +29,7 @@ const Confession = mongoose.model("Confession", confessionSchema);
 
 // routes
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/Index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 // submit confession
